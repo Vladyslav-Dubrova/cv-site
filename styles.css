@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+address {
+    width: 90%;
+}
+
+.contacts-ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-ul li {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    white-space: normal;
+}
+
+.contacts-ul li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+.experience-ul {
+    margin: 0px;
+    padding-left: 22px;
+}
+
+.experience-ul li {
+    color: dimgray;
+}
+
+h1 {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 20px 0 0 0;
+}
+
+h3 {
+    margin: 10px 0px 10px 0px;
+}
+
+h4 {
+    margin: 0;
+    color: dodgerblue;
+}
+
+h5 {
+    margin: 0px;
+}
+
+p {
+    color: dimgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.skills-grid div {
+    margin: 5px 0px 5px 0px;
+    border-bottom: 1px solid dimgray;
+    color: dimgray;
+}
+
+.experience-content,
+.education-container {
+    width: 100%;
+    border-bottom: 1px dotted dimgray;
+}
+
+.time-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1px;
+}
