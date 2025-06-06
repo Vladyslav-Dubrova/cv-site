@@ -42,8 +42,7 @@ main {
 
 .contacts-container ul li button,
 .time-container h5 span button {
-    border: none;
-    background: none;
+    all: unset;
     cursor: pointer;
     margin-right: 5px;
     font-size: 1.2em;
