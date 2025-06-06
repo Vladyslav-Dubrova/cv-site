@@ -21,11 +21,11 @@ main {
     flex-direction: column;
 }
 
-address {
+.contacts-container {
     width: 90%;
 }
 
-.contacts-ul {
+.contacts-container ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     list-style: none;
@@ -33,14 +33,15 @@ address {
     padding: 0;
 }
 
-.contacts-ul li {
+.contacts-container ul li {
     display: inline-flex;
     align-items: center;
     gap: 5px;
     white-space: normal;
 }
 
-.contacts-ul li button {
+.contacts-container ul li button,
+.time-container h5 span button {
     border: none;
     background: none;
     cursor: pointer;
