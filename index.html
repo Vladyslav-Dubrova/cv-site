@@ -10,71 +10,125 @@
     <title>CvSite</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <header>
-                <h1>Vladislav Dubrova</h1>
+    <div id="capture">
+        <main>
+            <div class="container">
+                <header>
+                    <div class="btn-position">
+                        <h1>Vladislav Dubrova</h1>
 
-                <h4>
-                    Looking for a job, open to new opportunities. Taking my first steps in independent life, ready to
-                    learn quickly - honestly, without show.
-                </h4>
+                        <div class="download-pdf-btn" id="screenshot-exclude"
+                            style="text-align: center; margin-top: 20px;">
+                            <button id="download-btn">Download as PDF</button>
+                        </div>
+                    </div>
 
-                <div class="contacts-container">
-                    <ul>
-                        <li><span><button>&#x1F4DE;</button></span> +37062855917</li>
-                        <li><span><button>@</button></span> dubrova.vlad.999@gmail.com</li>
-                        <li><span><button>&#x1F4CD;</button></span> Kaunas, Lithuania</li>
-                    </ul>
-                </div>
-            </header>
+                    <h4>
+                        Looking for a job, open to new opportunities. Taking my first steps in independent life, ready
+                        to
+                        learn quickly - honestly, without show.
+                    </h4>
 
-            <section class="summary">
-                <h2>SUMMARY</h2>
+                    <div class="contacts-container">
+                        <div class="left-container">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <button>
+                                            <img class="icon-img" src="img/phone-call.png"
+                                                data-hover="img/phone-call-hover.png" data-default="img/phone-call.png">
+                                        </button>
+                                    </span>
+                                    <a target="_blank" href="">+37062855917</a>
+                                </li>
 
-                <div class="line"></div>
+                                <li>
+                                    <span>
+                                        <button>
+                                            <img class="icon-img" src="img/envelope.png"
+                                                data-hover="img/envelope-hover.png" data-default="img/envelope.png">
+                                        </button>
+                                    </span>
+                                    <a target="_blank" href="">dubrova.vlad.999@gmail.com</a>
+                                </li>
 
-                <p>I’m a responsible and practical person, currently seeking an official full-time job in Lithuania.
-                    My goal is to become financially independent, gain real experience, and contribute where I can be
-                    useful.
-                    I am quick to learn, honest in communication, and not afraid of physical work or new challenges.
-                </p>
+                                <li>
+                                    <span>
+                                        <button>
+                                            <img class="icon-img" src="img/marker.png" data-hover="img/marker-hover.png"
+                                                data-default="img/marker.png">
+                                        </button>
+                                    </span>
+                                    <a target="_blank" href="https://maps.app.goo.gl/Q1EzuhbxQfc9T8Vt5">Kaunas,
+                                        Lithuania</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-container"></div>
+                    </div>
+                </header>
 
-            </section>
+                <section class="summary">
+                    <h2>SUMMARY</h2>
 
-            <section class="skills">
-                <h2>SKILLS</h2>
+                    <div class="line"></div>
 
-                <div class="line"></div>
+                    <p>I’m a responsible and practical person, currently seeking an official full-time job in Lithuania.
+                        My goal is to become financially independent, gain real experience, and contribute where I can
+                        be
+                        useful.
+                        I am quick to learn, honest in communication, and not afraid of physical work or new challenges.
+                    </p>
 
-                <div class="skills-grid">
-                    <div>CSS</div>
-                    <div>HTML</div>
-                    <div>Javascript</div>
-                    <div>Figma</div>
-                    <div>Git</div>
-                </div>
-            </section>
+                </section>
 
-            <section class="experience">
-                <h2>EXPERIENCE</h2>
+                <section class="skills">
+                    <h2>SKILLS</h2>
 
-                <div class="line"></div>
+                    <div class="line"></div>
 
-                <div class="experience-content">
-                    <div class="experience-container">
-                        <h3>Personal Work & Practice</h3>
+                    <div class="skills-container">
+                        <h3 class="top-skills">Front-end Web Development:</h3>
+                        <div class="skills-grid">
+                            <div><a target="_blank" href="https://en.wikipedia.org/wiki/CSS">CSS</a></div>
+                            <div><a target="_blank" href="https://en.wikipedia.org/wiki/HTML">HTML</a></div>
+                            <div><a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a></div>
+                            <div><a target="_blank" href="https://en.wikipedia.org/wiki/Figma">Figma</a></div>
+                            <div><a target="_blank" href="https://en.wikipedia.org/wiki/Git">Git</a></div>
+                            <div><a target="_blank" href="https://en.wikipedia.org/wiki/GitHub">GitHub</a></div>
+                        </div>
 
-                        <ul class="experience-ul">
-                            <li>Built this website using HTML and CSS to present myself professionally</li>
-                            <li>Created a CV and business card with a QR code for self-promotion</li>
-                            <li>Maintain basic IT knowledge: system setup, software installation, file management</li>
-                        </ul>
+                        <h3>Languages I Speak:</h3>
+                        <div class="skills-grid">
+                            <div>English</div>
+                            <div>Ukrainian</div>
+                            <div>Russian</div>
+                            <div>Lithuanian</div>
+                        </div>
+                    </div>
+                </section>
 
-                        <!-- <h3>Job</h3>
+                <section class="experience">
+                    <h2>EXPERIENCE</h2>
+
+                    <div class="line"></div>
+
+                    <div class="experience-content">
+                        <div class="experience-container">
+                            <h3>Personal Work & Practice</h3>
+
+                            <ul class="experience-ul">
+                                <li>Built this website using HTML and CSS to present myself professionally</li>
+                                <li>Created a CV and business card with a QR code for self-promotion</li>
+                                <li>Maintain basic IT knowledge: system setup, software installation, file management
+                                </li>
+                            </ul>
+
+                            <!-- <h3>Job</h3>
 
                         <h4>Job title</h4>
 
@@ -88,31 +142,43 @@
                             <li>Two</li>
                             <li>Three</li>
                         </ul> -->
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="education">
-                <h2>EDUCATION</h2>
+                <section class="education">
+                    <h2>EDUCATION</h2>
 
-                <div class="line"></div>
+                    <div class="line"></div>
 
-                <h3>Lyceum No. 88</h3>
+                    <h3>Lyceum No. 88</h3>
 
-                <div class="education-container">
+                    <div class="education-container">
 
-                    <h4>Certificate of Complete Secondary Education</h4>
+                        <h4>Certificate of Complete Secondary Education</h4>
 
-                    <div class="time-container">
-                        <h5><span><button>&#x1F4C5;</button></span> June 21, 2024</h5>
-                        <h5><span><button>&#x1F4CD;</button></span> Lyceum No. 88, Pechersk District, Kyiv</h5>
+                        <div class="time-container">
+                            <h5>
+                                <span>
+                                    <img class="icon-img" src="img/calendar.png" alt=""></span> June
+                                21,2024
+                            </h5>
+                            <h5>
+                                <span>
+                                    <img class="icon-img" src="img/marker.png" alt=""></span> Lyceum
+                                No.88,Pechersk District, Kyiv
+                            </h5>
+                        </div>
+
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <footer></footer>
-        </div>
-    </main>
+                <footer></footer>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
